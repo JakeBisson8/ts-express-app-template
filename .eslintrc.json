@@ -1,0 +1,16 @@
+{
+  "root": true,
+  "env": {
+    "es2021": true,
+    "node": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "extends": ["airbnb-base", "airbnb-typescript/base"],
+  "plugins": ["import"],
+  "rules": {
+    "linebreak-style": ["error", "windows"]
+  }
+}
