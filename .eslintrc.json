@@ -8,7 +8,7 @@
   "parserOptions": {
     "project": "./tsconfig.json"
   },
-  "extends": ["airbnb-base", "airbnb-typescript/base"],
+  "extends": ["airbnb-base", "airbnb-typescript/base", "prettier"],
   "plugins": ["import"],
   "rules": {
     "linebreak-style": ["error", "windows"]
