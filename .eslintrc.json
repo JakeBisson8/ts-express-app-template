@@ -9,8 +9,9 @@
     "project": "./tsconfig.json"
   },
   "extends": ["airbnb-base", "airbnb-typescript/base", "prettier"],
-  "plugins": ["import"],
+  "plugins": ["prettier", "import"],
   "rules": {
-    "linebreak-style": ["error", "windows"]
+    "linebreak-style": ["error", "windows"],
+    "prettier/prettier": "warn"
   }
 }
