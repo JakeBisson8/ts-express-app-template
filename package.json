@@ -8,10 +8,10 @@
     "build": "npm run clean && tsc",
     "start": "node ./dist/server.js",
     "dev": "nodemon ./src/server.ts",
-    "lint": "eslint ./",
-    "lint:fix": "eslint ./ --fix",
-    "prettier:check": "prettier ./ --check",
-    "prettier:write": "prettier ./ --write",
+    "lint": "eslint ./src",
+    "lint:fix": "eslint ./src --fix",
+    "prettier:check": "prettier ./src --check",
+    "prettier:write": "prettier ./src --write",
     "prepare": "husky install"
   },
   "keywords": [
