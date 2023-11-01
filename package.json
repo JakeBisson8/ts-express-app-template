@@ -10,8 +10,8 @@
     "dev": "nodemon ./src/server.ts",
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix",
-    "prettier:check": "prettier ./src --check",
-    "prettier:write": "prettier ./src --write",
+    "prettier:check": "prettier ./src --check --ignore-unknown",
+    "prettier:write": "prettier ./src --write --ignore-unknown",
     "prepare": "husky install"
   },
   "keywords": [
@@ -38,11 +38,12 @@
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-import": "^2.29.0",
     "eslint-plugin-prettier": "^5.0.1",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.0.2",
     "nodemon": "^3.0.1",
     "prettier": "^3.0.3",
     "rimraf": "^5.0.5",
     "ts-node": "^10.9.1",
-    "typescript": "^5.2.2",
-    "husky": "^8.0.0"
+    "typescript": "^5.2.2"
   }
 }
