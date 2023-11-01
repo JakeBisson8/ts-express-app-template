@@ -10,5 +10,6 @@ tsconfig.json
 .eslintignore
 .prettierrc
 .prettierignore
+.lintstagedrc
 LICENSE
 README.md
