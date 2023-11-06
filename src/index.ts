@@ -1,5 +1,4 @@
 import app from './app';
-import 'dotenv-safe/config';
 
 const { PORT } = process.env;
 app.listen(PORT, () => {

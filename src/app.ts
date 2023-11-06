@@ -1,5 +1,7 @@
 import express from 'express';
 
+require('dotenv-safe').config();
+
 const app = express();
 
 app.get('/', (req, res) => {
