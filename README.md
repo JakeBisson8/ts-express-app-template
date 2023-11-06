@@ -8,6 +8,7 @@ Dependencies:
 - cors
 - helmet
 - morgan
+- winston
 - dotenv-safe
 
 Dev Depenndencies:
