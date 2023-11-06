@@ -1,4 +1,5 @@
 node_modules
+logs
 package.json
 package-lock.json
 dist
