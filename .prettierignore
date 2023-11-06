@@ -1,15 +1,8 @@
 node_modules
-package.json
 package-lock.json
 dist
 .env
 .env.example
 .husky
-tsconfig.json
-.eslintrc.json
-.eslintignore
-.prettierrc
-.prettierignore
-.lintstagedrc
 LICENSE
 README.md

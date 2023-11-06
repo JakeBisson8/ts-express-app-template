@@ -2,7 +2,8 @@
   "root": true,
   "env": {
     "es2021": true,
-    "node": true
+    "node": true,
+    "jest": true
   },
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -13,5 +14,15 @@
   "rules": {
     "linebreak-style": ["error", "windows"],
     "prettier/prettier": "warn"
+  },
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "typescript": {
+        "project": "./tsconfig.json"
+      }
+    }
   }
 }

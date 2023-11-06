@@ -11,5 +11,6 @@ tsconfig.json
 .prettierrc
 .prettierignore
 .lintstagedrc
+jest.config.js
 LICENSE
 README.md
