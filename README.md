@@ -5,6 +5,7 @@ A basic expressJS application template that includes Typescript, ESLint, Prettie
 
 Dependencies:
 - express
+- cors
 - helmet
 - dotenv-safe
 
