@@ -7,6 +7,7 @@ Dependencies:
 - express
 - cors
 - helmet
+- morgan
 - dotenv-safe
 
 Dev Depenndencies:
