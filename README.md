@@ -23,6 +23,7 @@ Dev Depenndencies:
 - supertest
 - nodemon
 - ts-node
+- cross-env
 
 ### Installation
 1. Clone this repository

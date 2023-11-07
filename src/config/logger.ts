@@ -10,14 +10,14 @@ const productionFormat = winston.format.combine(winston.format.timestamp(), wins
 
 const logger = winston.createLogger({
   level: 'info',
-  format: process.env.NODE_ENV === 'production' ? productionFormat : developmentFormat,
+  format: process.env.NODE_ENV !== 'development' ? productionFormat : developmentFormat,
   transports: [
     new winston.transports.File({ filename: path.join(__dirname, '../logs/error.log'), level: 'error' }),
     new winston.transports.File({ filename: path.join(__dirname, '../logs/combined.log') }),
   ],
 });
 
-if (process.env.NODE_ENV !== 'production') {
+if (process.env.NODE_ENV === 'development') {
   logger.add(
     new winston.transports.Console({
       format: winston.format.combine(winston.format.colorize(), developmentFormat),
