@@ -36,12 +36,13 @@ git remote remove origin
 git remote add origin <your github repo link>.git
 git push
 ```
-3. Install project dependencies
+4. Udpate `package.json` to change the `name`, `description`, `version`, `keywords` etc. to whatever you want
+4. Install project dependencies
 ```bash
 npm install
 ```
-4. make a copy of `.env.example` and update values
-5. Start the development server
+5. make a copy of `.env.example` and update values
+6. Start the development server
 ```bash
 npm run dev
 ```
