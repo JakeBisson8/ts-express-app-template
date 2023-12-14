@@ -24,25 +24,22 @@ Dev Depenndencies:
 - nodemon
 - ts-node
 - cross-env
+- lint-staged
+- rimraf
 
 ### Installation
-1. Clone this repository
+1. Select to use the template in GitHub and create a new repository
+2. Clone your new repository
 ```bash
-git clone git@github.com:JakeBisson8/ts-express-app-template.git
+git clone <repository_link>.git
 ```
-2. Update remote to point to your own repository
-```bash
-git remote remove origin
-git remote add origin <your github repo link>.git
-git push
-```
-4. Udpate `package.json` to change the `name`, `description`, `version`, `keywords` etc. to whatever you want
-4. Install project dependencies
+1. Udpate `package.json` to change the `name`, `description`, `version`, `keywords` etc. to match your project.
+2. Install project dependencies using your package manager of choice
 ```bash
 npm install
 ```
-5. make a copy of `.env.example` and update values
-6. Start the development server
+1. make a copy of `.env.example` and update values
+2. Start the development server
 ```bash
 npm run dev
 ```
@@ -85,4 +82,5 @@ npm run start
 ```
 
 ### License
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](https://github.com/JakeBisson8/angular-17-app-template/blob/main/LICENSE)  
+[https://choosealicense.com/licenses/mit/](https://choosealicense.com/licenses/mit/)
