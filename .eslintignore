@@ -3,6 +3,7 @@ logs
 package.json
 package-lock.json
 dist
+.vscode
 .env
 .env.example
 .husky

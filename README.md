@@ -33,13 +33,23 @@ Dev Depenndencies:
 ```bash
 git clone <repository_link>.git
 ```
-1. Udpate `package.json` to change the `name`, `description`, `version`, `keywords` etc. to match your project.
-2. Install project dependencies using your package manager of choice
+3. Udpate `package.json` to change the `name`, `description`, `version`, `keywords` etc. to match your project.
+4. Install project dependencies using your package manager of choice
 ```bash
 npm install
 ```
-1. make a copy of `.env.example` and update values
-2. Start the development server
+5. Install recommended vscode extensions
+    1. ESLint
+    2. Prettier - Code Formatter
+6. Set prettier as default formatter and format on save
+```json
+{
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
+```
+7. make a copy of `.env.example` and update values
+8. Start the development server
 ```bash
 npm run dev
 ```
