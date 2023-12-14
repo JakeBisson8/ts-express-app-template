@@ -4,6 +4,7 @@
     "baseUrl": "./src",
     "target": "es2016",
     "module": "nodenext",
+    "resolveJsonModule": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
