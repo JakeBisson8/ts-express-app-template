@@ -13,7 +13,7 @@
     "lint:fix": "eslint ./src ./test --fix",
     "prettier:check": "prettier ./src ./test --check --ignore-unknown",
     "prettier:write": "prettier ./src ./test --write --ignore-unknown",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "keywords": [
     "node",
