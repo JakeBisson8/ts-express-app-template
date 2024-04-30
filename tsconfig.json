@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "outDir": "./dist",
-    "baseUrl": "./src",
     "target": "es2016",
     "module": "nodenext",
     "resolveJsonModule": true,
