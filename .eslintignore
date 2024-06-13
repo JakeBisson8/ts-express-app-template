@@ -16,3 +16,4 @@ tsconfig.json
 jest.config.js
 LICENSE
 README.md
+service.js

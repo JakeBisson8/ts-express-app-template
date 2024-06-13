@@ -13,7 +13,11 @@
     "lint:fix": "eslint ./src ./test --fix",
     "prettier:check": "prettier ./src ./test --check --ignore-unknown",
     "prettier:write": "prettier ./src ./test --write --ignore-unknown",
-    "prepare": "husky"
+    "prepare": "husky",
+    "install-service": "node service.js install",
+    "start-service": "node service.js start",
+    "stop-service": "node service.js stop",
+    "uninstall-service": "node service.js uninstall"
   },
   "keywords": [
     "node",
