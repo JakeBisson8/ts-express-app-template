@@ -1,7 +1,7 @@
 import morgan from 'morgan';
 import path from 'path';
 
-const rfs = require('rotating-file-system');
+const rfs = require('rotating-file-stream');
 
 const httpCombinedStream = rfs.createStream('http_combined.log', {
   interval: '1d',
