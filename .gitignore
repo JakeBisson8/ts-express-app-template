@@ -3,6 +3,7 @@ dist
 logs
 .env
 .vscode/*
+tsconfig.build.tsbuildinfo
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
