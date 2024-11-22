@@ -6,7 +6,8 @@
   "scripts": {
     "test": "cross-env NODE_ENV=test jest",
     "clean": "rimraf ./dist",
-    "build": "npm run clean && tsc",
+    "build": "npm run clean && tsc --build tsconfig.build.json",
+    "build:all": "npm run clean && tsc --build tsconfig.json",
     "start": "cross-env NODE_ENV=production node ./dist/index.js",
     "dev": "cross-env NODE_ENV=development nodemon ./src/index.ts",
     "lint": "eslint ./src ./test",

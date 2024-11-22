@@ -1,10 +1,10 @@
 import express from 'express';
 import helmet from 'helmet';
 import cors from 'cors';
-import morgan from 'morgan';
 import fs from 'fs';
 import path from 'path';
 import httpRedirect from './middleware/httpRedirect';
+import { httpDevLogger, httpErrorLogger, httpLogger } from './config/httplogger';
 
 require('dotenv-safe').config();
 
@@ -41,19 +41,15 @@ if (!fs.existsSync(directory)) {
 }
 
 // Morgan setup
-const httpLogCombinedStream = fs.createWriteStream(path.join(__dirname, 'logs/httprequests_combined.log'), {
-  flags: 'a',
-});
-const httpErrorLogStream = fs.createWriteStream(path.join(__dirname, 'logs/httprequests_error.log'), { flags: 'a' });
-app.use(morgan('common', { stream: httpLogCombinedStream }));
-app.use(
-  morgan('common', {
-    skip: (req, res) => res.statusCode < 400,
-    stream: httpErrorLogStream,
-  }),
-);
+app.use(httpLogger);
+app.use(httpErrorLogger);
 if (NODE_ENV === 'development') {
-  app.use(morgan('dev'));
+  app.use(httpDevLogger);
+}
+
+// re-direct HTTP to HTTPS
+if (usingHttps && NODE_ENV !== 'test') {
+  app.use(httpRedirect);
 }
 
 // Default endpoint
